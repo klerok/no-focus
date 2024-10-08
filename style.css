@@ -64,6 +64,8 @@
     content: '';
     display: inline-block;
     position: absolute;
+    top: 8px;
+    left: 43px;
 }
 
 h1 {
@@ -73,6 +75,9 @@ h1 {
     color: #DB00FF;
     text-shadow: 4px 4px #ff0070;
     line-height: 83%;
+    margin: 0;
+    position: absolute;
+    top: 319px;
 }
 
 .title {
@@ -91,6 +96,7 @@ h1 {
     font-size: 18px;
     line-height: 130%;
     color: #000028;
+    margin: 0;
 }
 
 .square-top {
