@@ -141,17 +141,18 @@ h1 {
 .wrapper {
     display: flex;
     flex-direction: column;
-    gap: 0px;
-    padding: 0px 20px;
+    gap: 20px;
+    width: 648px;
+}
+
+.section-1 {
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
     width: 1024px;
     height: 508px;
+    margin-top: 60px;
 }
-
-.inf {
-    width: 984px;
-    height: 508px;
-}
-
 
 .name {
     font-family: var(--font-family);
@@ -164,12 +165,50 @@ h1 {
     height: 23px;
     background: #ff0070;
 }
+
 .text {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 130%;
     color: #f1b2ce;
-    margin: 0;
     
 }
+
+.section-2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 20px;
+    width: 1024px;
+    height: 498px;
+}
+
+.wrapper-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    width: 984px;
+    height: 431px;
+}
+
+.small-text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #f1b2ce;
+}
+
+.name-small {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000028;
+    background: #ff0070;
+}
+
