@@ -136,6 +136,7 @@ h1 {
     line-height: 130%;
     color: #ff0070;
     margin: 0;
+    padding-left: 20px;
 }
 
 .wrapper {
@@ -148,7 +149,6 @@ h1 {
 .section-1 {
     display: flex;
     gap: 20px;
-    padding: 0 20px;
     width: 1024px;
     height: 508px;
     margin-top: 60px;
@@ -164,6 +164,7 @@ h1 {
     width: 649px;
     height: 23px;
     background: #ff0070;
+    margin-bottom: 10px;
 }
 
 .text {
@@ -175,12 +176,43 @@ h1 {
     
 }
 
+a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #f1b2ce;
+    text-shadow: 2px 2px #ff0070;
+}
+
+a:hover {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #f1b2ce;
+}
+
+a:focus {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    color: #f1b2ce;
+}
+
+.mini-section {
+    width: 984px;
+    height: 508px;
+    display: flex;
+    padding: 0 20px;
+}
+
 .section-2 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
     gap: 0px;
-    padding: 0px 20px;
+    padding: 0 20px;
     width: 1024px;
     height: 498px;
 }
@@ -195,7 +227,7 @@ h1 {
     height: 431px;
 }
 
-.small-text {
+.text-2 {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
@@ -203,12 +235,56 @@ h1 {
     color: #f1b2ce;
 }
 
-.name-small {
+.name-2 {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 130%;
     color: #000028;
     background: #ff0070;
+    margin-bottom: 10px;
 }
 
+.section-3 {
+    display: flex;
+    gap: 20px;
+    width: 1024px;
+    height: 1015px;
+    
+}
+
+.wrapper-3 {
+    display: flex;
+    flex-direction: column;
+    width: 649px;
+    gap: 20px;
+}
+
+.sovet {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000028;
+    background: #ff0070;
+    margin: 0;
+}
+
+.text-3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #f1b2ce;
+}
+
+.name-3 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000028;
+    background: #ff0070;
+    margin: 0;
+    margin-bottom: 10px;
+}
