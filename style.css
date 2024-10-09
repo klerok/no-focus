@@ -14,11 +14,20 @@
     --font-family: "IBM Plex Mono", sans-serif;
 }
 
+body {
+    background-color: #000028;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: max-content;
+    position: relative;
+}
+
 .header {
     width: 1024px;
     height: 768px;
     background-image: url(assets/images/cover-image-dark.svg);
-    background-color: #000028;
 }
 
 .navigation {
@@ -53,6 +62,7 @@
     position: absolute;
     top: 20px;
     left: 943px;
+    display: block;
 }
 
 .lamp::after {
@@ -117,4 +127,38 @@ h1 {
     position: absolute;
     top: 723px;
     left: 20px;
+}
+
+.title-2 {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #ff0070;
+    margin: 0;
+}
+
+.section-1 {
+    display: flex;
+    width: 1024px;
+    height: 508px;
+}
+
+.nameblock {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000028;
+    margin: 0;
+    width: 649px;
+    height: 23px;
+    background: #ff0070;
+}
+.block {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #f1b2ce;
 }
