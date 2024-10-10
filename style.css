@@ -137,6 +137,8 @@ h1 {
     color: #ff0070;
     margin: 0;
     padding-left: 20px;
+    width: 315px;
+    height: 47px;
 }
 
 .wrapper {
@@ -152,6 +154,7 @@ h1 {
     width: 1024px;
     height: 508px;
     margin-top: 60px;
+    padding: 0 20px;
 }
 
 .name {
@@ -200,12 +203,6 @@ a:focus {
     color: #f1b2ce;
 }
 
-.mini-section {
-    width: 984px;
-    height: 508px;
-    display: flex;
-    padding: 0 20px;
-}
 
 .section-2 {
     display: flex;
@@ -215,16 +212,17 @@ a:focus {
     padding: 0 20px;
     width: 1024px;
     height: 498px;
+    margin-bottom: 80px;
 }
 
 .wrapper-2 {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    flex-direction: row;
     gap: 20px;
     width: 984px;
     height: 431px;
+    padding: 0 20px;
 }
 
 .text-2 {
@@ -243,6 +241,22 @@ a:focus {
     color: #000028;
     background: #ff0070;
     margin-bottom: 10px;
+    justify-content: center;
+}
+
+.multitask {
+    width: 315px;
+    height: 384px
+}
+
+.food {
+    width: 315px;
+    height: 361px;
+}
+
+.gadgets {
+    width: 315px;
+    height: 431px;
 }
 
 .section-3 {
@@ -250,7 +264,8 @@ a:focus {
     gap: 20px;
     width: 1024px;
     height: 1015px;
-    
+    padding: 0 20px;
+    margin-bottom: 80px;
 }
 
 .wrapper-3 {
@@ -289,11 +304,21 @@ a:focus {
     margin-bottom: 10px;
 }
 
-.gallary {
+.gallary-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
     width: 1024px;
     height: 1091px;
     padding: 0 20px;
-    margin-top: 80px;
+    
+}
+
+.gallary {
+    
+    padding: 0 20px;
+    
 }
 
 .gallary-title {
@@ -303,12 +328,20 @@ a:focus {
     line-height: 130%;
     color: #000028;
     background-color: #ff0070;
+    
 }
 
-.wrapper-4 {
+.gallary-image {
+    display: flex;
+    width: 984px;
+    height: 1091px;
+}
+
+.gallary-item {
     display: flex;
     flex-wrap: wrap;
-    gap: 0;
+    gap: 20px;
+    flex-shrink: 1;
 }
 
 
@@ -316,28 +349,36 @@ a:focus {
     width: 649px;
     height: 260px;
     order: 1;
+    
 }
 
 .image-2:nth-child(2) {
     order: 5;
     width: 649px;
     height: 428px;
+    align-self: center;
+    
 }
 
 .image-3:nth-child(3) {
     order: 3;
     width: 315px;
     height: 768px;
+    
+    
 }
 
 .image-4:nth-child(4) {
     order: 4;
     width: 315px;
     height: 315px;
+    
 }
 
 .image-5:nth-child(5) {
     width: 315px;
     height: 595px;
     order: 2;
+    
+    
 }
