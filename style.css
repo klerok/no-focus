@@ -12,10 +12,11 @@
 
 :root {
     --font-family: "IBM Plex Mono", sans-serif;
+    --color: #ff0070
 }
 
 body {
-    background-color: #000028;
+    background: #000028;
 }
 
 .container {
@@ -39,9 +40,9 @@ body {
 
 .navigation button {
     border: none;
-    background-color: transparent;
+    background: transparent;
     font-size: 18px;
-    color: #FF0070;
+    color: var(--color);
     
 }
 
@@ -57,7 +58,7 @@ body {
     font-size: 18px;
     line-height: 139%;
     text-align: center;
-    color: #ff0070;
+    color: var(--color);
     margin: 0;
     position: absolute;
     top: 20px;
@@ -67,8 +68,8 @@ body {
 
 .lamp::after {
     border-radius: 100%;
-    background-color: #FF0070;
-    box-shadow: 0 0 4px 2px #ff0070;
+    background: var(--color);
+    box-shadow: 0 0 4px 2px var(--color);
     width: 9px;
     height: 9px;
     content: '';
@@ -91,7 +92,7 @@ h1 {
 }
 
 .title {
-    background-color: #FF0070;
+    background-color: var(--color);
     display: flex;
     width: 491px;
     height: 70px;
@@ -134,7 +135,7 @@ h1 {
     font-weight: 700;
     font-size: 18px;
     line-height: 130%;
-    color: #ff0070;
+    color: var(--color);
     margin: 0;
     padding-left: 20px;
     width: 315px;
@@ -154,7 +155,8 @@ h1 {
     width: 1024px;
     height: 508px;
     margin-top: 60px;
-    padding: 0 20px;
+    margin-bottom: 80px;
+    box-sizing: border-box;
 }
 
 .name {
@@ -166,7 +168,7 @@ h1 {
     margin: 0;
     width: 649px;
     height: 23px;
-    background: #ff0070;
+    background: var(--color);
     margin-bottom: 10px;
 }
 
@@ -185,6 +187,7 @@ a {
     font-size: 18px;
     color: #f1b2ce;
     text-shadow: 2px 2px #ff0070;
+    text-decoration: none;
 }
 
 a:hover {
@@ -201,6 +204,8 @@ a:focus {
     font-weight: 400;
     font-size: 18px;
     color: #f1b2ce;
+    border: 1px solid #f1b2ce;
+    text-decoration: none;
 }
 
 
@@ -209,10 +214,10 @@ a:focus {
     justify-content: flex-start;
     flex-direction: column;
     gap: 0px;
-    padding: 0 20px;
     width: 1024px;
     height: 498px;
     margin-bottom: 80px;
+    box-sizing: border-box;
 }
 
 .wrapper-2 {
@@ -239,7 +244,7 @@ a:focus {
     font-size: 18px;
     line-height: 130%;
     color: #000028;
-    background: #ff0070;
+    background: var(--color);
     margin-bottom: 10px;
     justify-content: center;
 }
@@ -264,8 +269,8 @@ a:focus {
     gap: 20px;
     width: 1024px;
     height: 1015px;
-    padding: 0 20px;
     margin-bottom: 80px;
+    box-sizing: border-box;
 }
 
 .wrapper-3 {
@@ -281,7 +286,7 @@ a:focus {
     font-size: 18px;
     line-height: 130%;
     color: #000028;
-    background: #ff0070;
+    background: var(--color);
     margin: 0;
 }
 
@@ -299,7 +304,7 @@ a:focus {
     font-size: 18px;
     line-height: 130%;
     color: #000028;
-    background: #ff0070;
+    background: var(--color);
     margin: 0;
     margin-bottom: 10px;
 }
@@ -311,13 +316,12 @@ a:focus {
     flex-direction: column;
     width: 1024px;
     height: 1091px;
-    padding: 0 20px;
-    
+    margin-bottom: 80px;
+    box-sizing: border-box;
 }
 
 .gallary {
     
-    padding: 0 20px;
     
 }
 
@@ -327,58 +331,58 @@ a:focus {
     font-size: 18px;
     line-height: 130%;
     color: #000028;
-    background-color: #ff0070;
+    background: var(--color);
+    margin: 20px 0;
     
 }
 
 .gallary-image {
-    display: flex;
-    width: 984px;
-    height: 1091px;
+    display: grid;
+    grid-template-areas: 
+        'img1 img1 img2'
+        'img3 img4 img2'
+        'img3 img5 img5';
+    gap: 20px;
 }
 
 .gallary-item {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    flex-shrink: 1;
-}
-
-
-.image-1:nth-child(1) {
-    width: 649px;
-    height: 260px;
-    order: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     
 }
 
-.image-2:nth-child(2) {
-    order: 5;
-    width: 649px;
-    height: 428px;
-    align-self: center;
-    
+
+.image-1 {
+   grid-area: img1;
 }
 
-.image-3:nth-child(3) {
-    order: 3;
-    width: 315px;
+.image-2 {
+    grid-area: img2;
+}
+
+.image-3 {
+    grid-area: img3;
+}
+
+.image-4 {
+   grid-area: img4;
+}
+
+.image-5 {
+    grid-area: img5;
+}
+
+footer {
+    width: 1024px;
     height: 768px;
-    
-    
+    position: relative;
+    box-sizing: border-box;
 }
 
-.image-4:nth-child(4) {
-    order: 4;
-    width: 315px;
-    height: 315px;
-    
+.h1-footer {
+    position: absolute;
+    left: 277px;
 }
 
-.image-5:nth-child(5) {
-    width: 315px;
-    height: 595px;
-    order: 2;
-    
-    
-}
+
