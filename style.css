@@ -12,7 +12,6 @@
 
 :root {
     --font-family: "IBM Plex Mono", sans-serif;
-    --color: #ff0070
 }
 
 body {
@@ -91,7 +90,6 @@ h1 {
 }
 
 .title {
-    background-color: var(--color);
     display: flex;
     width: 491px;
     height: 70px;
@@ -134,7 +132,7 @@ h1 {
     font-weight: 700;
     font-size: 18px;
     line-height: 130%;
-    color: var(--color);
+    color: #ff0070;
     margin: 0;
     padding-left: 20px;
     width: 315px;
@@ -163,11 +161,9 @@ h1 {
     line-height: 130%;
     color: #000028;
     margin: 0;
-    width: 649px;
-    height: 23px;
-    background: var(--color);
     margin-bottom: 10px;
 }
+
 
 .text {
     font-family: var(--font-family);
@@ -225,23 +221,13 @@ a:focus {
     padding: 0 20px;
 }
 
-.text-2 {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 130%;
-    color: #f1b2ce;
-}
-
 .name-2 {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 130%;
     color: #000028;
-    background: var(--color);
     margin-bottom: 10px;
-    justify-content: center;
 }
 
 .multitask {
@@ -261,7 +247,6 @@ a:focus {
     gap: 20px;
     height: 1015px;
     margin-bottom: 80px;
-    box-sizing: border-box;
 }
 
 .wrapper-3 {
@@ -277,58 +262,37 @@ a:focus {
     font-size: 18px;
     line-height: 130%;
     color: #000028;
-    background: var(--color);
     margin: 0;
 }
 
-.text-3 {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 130%;
-    color: #f1b2ce;
-}
 
-.name-3 {
-    font-family: var(--font-family);
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 130%;
-    color: #000028;
-    background: var(--color);
-    margin: 0;
-    margin-bottom: 10px;
-}
-
-.gallary-section {
+.gallery-section {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     height: 1091px;
     margin-bottom: 80px;
-    box-sizing: border-box;
 }
 
 
-.gallary-title {
+.gallery-title {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
     line-height: 130%;
     color: #000028;
-    background: var(--color);
-    margin: 20px 0;
+    margin: 0 0 20px 0;
     
 }
 
-.gallary {
+.gallery {
     width: 984px;
     height: 1091px;
     
 }
 
-.gallary-image {
+.gallery-image {
     display: grid;
     grid-template-areas: 
         'img1 img1 img2'
@@ -337,7 +301,7 @@ a:focus {
     gap: 20px;
 }
 
-.gallary-item {
+.gallery-item {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -385,6 +349,13 @@ footer {
 
 .section {
     box-sizing: border-box;
-    
+
 }
 
+.rectangle {
+    background: #ff0070;
+}
+
+.f-400 {
+    font-weight: 400;
+}
