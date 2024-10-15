@@ -33,6 +33,7 @@ body {
     display: flex;
     gap: 10px;
     justify-content: center;
+    align-items: center;
     padding-top: 20px;
 }
 
@@ -41,6 +42,7 @@ body {
     background: transparent;
     font-size: 18px;
     color: #ff0070;
+    padding: 0 13px;
     
 }
 
@@ -48,6 +50,10 @@ body {
     cursor: pointer;
     font-size: 18px;
     border: 1px solid #ff0070;
+}
+
+.navigation button:focus {
+    border-bottom: 1px solid #ff0070;
 }
 
 .lamp {
@@ -98,7 +104,7 @@ h1 {
     top: 563px;
 }
 
-.title p {
+.title-text {
     font-family: var(--font-family);
     font-weight: 700;
     font-size: 18px;
@@ -107,12 +113,15 @@ h1 {
     margin: 0;
 }
 
-.square-top {
-    border-right: 1px solid #ff0070;
-    border-top: 1px solid #ff0070;
+.square {
     width: 25px;
     height: 25px;
     position: absolute;
+}
+
+.square-top {
+    border-right: 1px solid #ff0070;
+    border-top: 1px solid #ff0070;
     top: 20px;
     left: 976px;
 }
@@ -120,9 +129,6 @@ h1 {
 .square-bottom {
     border-bottom: 1px solid #ff0070;
     border-left: 1px solid #ff0070;
-    width: 25px;
-    height: 25px;
-    position: absolute;
     top: 723px;
     left: 20px;
 }
@@ -206,7 +212,7 @@ a:focus {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    gap: 0px;
+    gap: 0;
     height: 498px;
     margin-bottom: 80px;
 }
