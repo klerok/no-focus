@@ -38,7 +38,7 @@ body {
 }
 
 .navigation button {
-    border: none;
+    border:none;
     background: transparent;
     font-size: 18px;
     color: #ff0070;
@@ -53,8 +53,8 @@ body {
     border: 1px solid #ff0070;
 }
 
-.navigation button:focus {
-    border-bottom: 1px solid #ff0070;
+.activebtn {
+    border: 1px solid #ff0070 !important;
 }
 
 .lamp {
